@@ -1,5 +1,3 @@
-let submitButton = document.getElementById ("submitButton")
-let deleteButton = document.getElementById ("dealteButton")
 const prezzoKm = 0.21;
 const submitBtn = document.getElementById("submitButton")
 const deleteBtn = document.getElementById("deleteButton")
