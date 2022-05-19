@@ -1,6 +1,6 @@
-const prezzoKm = 0.21;
 const submitBtn = document.getElementById("submitButton")
 const deleteBtn = document.getElementById("deleteButton")
+const prezzoKm = 0.21;
 
 deleteBtn.addEventListener("click", function(){
     window.location.reload();
