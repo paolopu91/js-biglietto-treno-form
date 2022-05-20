@@ -1,9 +1,9 @@
 alert("Ciao, compila i dati qui sotto per generare il tuo biglietto")
 
 const submitBtn = document.getElementById("submitButton")
-const inputUserName = document.querySelector("[name='userName']");
-const inputKmDaFare = document.querySelector("[name ='kmDaFare']");
-const inputFasciaEta = document.querySelector("[name ='fasciaEta' ]");
+let inputUserName = document.querySelector("[name='userName']");
+let inputKmDaFare = document.querySelector("[name ='kmDaFare']");
+let inputFasciaEta = document.querySelector("[name ='fasciaEta' ]");
 
 submitBtn.addEventListener("click" , function() {
 
@@ -19,6 +19,7 @@ const eta = parseInt(inputUserName.value)
 const km = parseInt(inputKmDaFare.value)
 let datiValidi = true
 
+console.log(inputUserName, inputFasciaEta, inputKmDaFare)
 // if (isNaN(inputFasciaEta) && isNaN(inputKmDaFare)) {
 //     datiValidi=false
 //     alert("Inserisci un numero valido")
@@ -42,7 +43,8 @@ if(eta<18) {
 const userHTML = document.getElementById("userHTML")
 const costoTotaleHTML = document.getElementById("costoTotaleHTML")
 
-userHTML.value
+userHTML.innerHTML = `<span class="user-class">${userHTML}</span>`
+costoTotaleHTML.innerHTML = `<span class="prezzo-class"> ${costoTotaleHTML}</span>`
 });
 
 
