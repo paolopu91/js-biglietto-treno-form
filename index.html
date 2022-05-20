@@ -23,17 +23,18 @@
 
                     <div class="col">
                         <h6 href="#">Km da percorrere</h6>
-                        <input class="text-center" type="text" placeholder="km" name="KmDaFare">
+                        <input class="text-center" type="text" placeholder="km" name="kmDaFare">
                     </div>
 
                     <div class="col">
                         <h6 href="#">Fascia d'età</h6>
-                        <!-- <input class="text-center" type="text" placeholder="eta"> -->
-                        <select name="" id="fasciaEta">
+                        <label for="" class="form-label"></label>
+                        <input class="text-center" type="text" placeholder="eta" name="fasciaEta"> 
+                        <!-- <select name="" id="fasciaEta">
                             <option value="minorenne">Minorenne</option>
                             <option value="maggiorenne">Maggiorenne</option>
                             <option value="over65">Over65</option>
-                        </select>
+                        </select> -->
                     </div>
                 </div>
                 <div class="text-center py-5">
@@ -50,6 +51,7 @@
                 <div class=" row d-flex">
                     <div class="col background-grey mx-2 my-3">
                         <h5>NOME PASSEGGERO</h5>
+                        <span id="userHTML"></span>
                     </div>
                     <div class="col border-bottom border-top my-3">
                         <h6 class="text-black padding-bottom ">Offerta</h6>
@@ -65,7 +67,7 @@
                     </div>
                     <div class="col border-bottom border-top my-3">
                         <h6 class="text-black padding-bottom ">Costo biglietto</h6>
-
+                        <span id="costoTotaleHTML"></span>
                     </div>
 
                 </div>
